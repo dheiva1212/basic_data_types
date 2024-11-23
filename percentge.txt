@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    n=int(input())
+    name_score={}
+    for _ in range(n):
+        name, *line = input(). split()
+        scores = list(map(float, line))
+        name_score[name]=scores
+    query_name = input()
+    lst=list(name_score[query_name])
+    add=sum(lst)
+    avg=add/len(lst)
+    print('%.2f'% avg)
+    
